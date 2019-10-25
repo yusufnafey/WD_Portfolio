@@ -3397,6 +3397,7 @@ input, select, textarea {
 			transform: translateY(0);
 			opacity: 1;
 			margin: 0 0 1.3em 0;
+			text-align: center;
 		}
 
 			#banner .logo .icon {
@@ -3433,6 +3434,15 @@ input, select, textarea {
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+		}
+
+		.subtitle {
+			float: right;
+			font-size: 1.5em;
+		}
+
+		.mission-statement {
+			text-align: center;
 		}
 
 		#banner p {
@@ -3506,6 +3516,10 @@ input, select, textarea {
 
 				#banner h2 {
 					font-size: 1.5em;
+				}
+
+				#banner .subtitle {
+					font-size: 1em;
 				}
 
 				#banner p {
