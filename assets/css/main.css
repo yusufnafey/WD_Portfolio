@@ -3437,9 +3437,23 @@ input, select, textarea {
 			padding-bottom: 0.4em;
 		}
 
-		#banner .yo {
-			width: 300px;
+		#banner .social-links {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			margin: auto;
+			text-decoration: none;
+
 		}
+
+		#banner .social-links a {
+			border: none;
+		}
+
+			#banner .social-links i {
+				color: white;
+				font-size: 5em;
+			}
 
 		.subtitle {
 			float: right;
