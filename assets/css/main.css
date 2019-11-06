@@ -4239,8 +4239,13 @@ body.is-preload #banner p {
 
 #footer .inner .social-links div {
   text-align: center;
-  width: 6em;
+  width: 9em;
 }
+
+#footer .inner .social-links div:hover {
+	text-align: center;
+	width: 9em;
+  }
 
 #footer .inner .social-links a {
   border: none;
@@ -4255,8 +4260,14 @@ body.is-preload #banner p {
 	margin: 1em 0 0 0;
 }
 
+#footer .inner .social-links .icon-label {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #ebb734;
+  }
+
 #footer .inner .social-links .contact-info {
-  font-size: 10px;
+	border-bottom: 1px #4c5c96 solid;
 }
 
 #footer .inner .copyright {
