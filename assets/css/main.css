@@ -3407,10 +3407,10 @@ input, select, textarea {
 				cursor: default;
 				display: inline-block;
 				font-size: 2em;
-				height: 2.25em;
+				height: 5em;
 				line-height: 2.25em;
 				text-align: center;
-				width: 2.25em;
+				width: 5em;
 			}
 
 		#banner h2 {
@@ -3496,6 +3496,7 @@ input, select, textarea {
 
 		#banner .mission-statement {
 			text-align: center;
+			text-transform: initial;
 		}
 
 		#banner p {
