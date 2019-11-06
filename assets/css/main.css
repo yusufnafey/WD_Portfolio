@@ -4121,13 +4121,27 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		#footer .inner form {
+		/* #footer .inner form {
 			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
+		} */
+
+		/* #footer .inner .contact {
+			width: calc(50% - 1.5em);
+		} */
+
+		#footer .inner .social-links {
+			display: flex;
+			justify-content: space-around;
 		}
 
-		#footer .inner .contact {
-			width: calc(50% - 1.5em);
+		#footer .inner .social-links a {
+			border: none;
+		}
+
+		#footer .inner .social-links a i {
+			color: white;
+			font-size: 3em;
 		}
 
 		#footer .inner .copyright {
