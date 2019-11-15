@@ -3254,12 +3254,9 @@ button:disabled,
   line-height: inherit;
 }
 
-#header nav a[href="#menu"]:hover {
-  background-color: rgba(255, 255, 255, 0.025);
-}
-
-#header nav a[href="#menu"]:active {
-  background-color: rgba(255, 255, 255, 0.075);
+#header nav a:hover {
+  background-color: black;
+  transition: all .5s;
 }
 
 #header.alt {
