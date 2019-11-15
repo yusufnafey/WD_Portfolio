@@ -3678,18 +3678,6 @@ body.is-preload #banner .subtitle {
   filter: blur(2px);
 }
 
-body.is-preload #banner .social-links {
-  opacity: 0;
-  -moz-transform: translateX(0.5em);
-  -webkit-transform: translateX(0.5em);
-  -ms-transform: translateX(0.5em);
-  transform: translateX(0.5em);
-  -moz-filter: blur(2px);
-  -webkit-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-}
-
 body.is-preload #banner p {
   opacity: 0;
   -moz-transform: translateX(0.5em);
@@ -4205,13 +4193,16 @@ body.is-preload #banner p {
   width: 9em;
 }
 
-#footer .inner .social-links div:hover {
-	text-align: center;
-	width: 9em;
-  }
-
 #footer .inner .social-links a {
   border: none;
+}
+
+#footer .inner .social-links a:hover i {
+  color: gray;
+}
+
+#footer .inner .social-links a:hover span {
+  color: lightblue;
 }
 
 #footer .inner .social-links a i {
