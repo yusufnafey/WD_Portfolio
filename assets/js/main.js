@@ -4,6 +4,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// smooth scroll
+$(document).ready(function(){
+	$("a").on('click', function(event) {
+  
+	  if (this.hash !== "") {
+		event.preventDefault();
+  
+		var hash = this.hash;
+  
+		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 800, function(){
+	 
+		  window.location.hash = hash;
+		});
+	});
+  });
+
 (function($) {
 
 	var	$window = $(window),
