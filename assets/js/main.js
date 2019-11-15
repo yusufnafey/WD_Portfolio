@@ -23,6 +23,7 @@ $(document).ready(function(){
 	});
   });
 
+
 (function($) {
 
 	var	$window = $(window),
