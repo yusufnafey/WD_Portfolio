@@ -3254,12 +3254,9 @@ button:disabled,
   line-height: inherit;
 }
 
-#header nav a[href="#menu"]:hover {
-  background-color: rgba(255, 255, 255, 0.025);
-}
-
-#header nav a[href="#menu"]:active {
-  background-color: rgba(255, 255, 255, 0.075);
+#header nav a:hover {
+  background-color: black;
+  transition: all .5s;
 }
 
 #header.alt {
@@ -3558,43 +3555,6 @@ body.is-menu-visible #menu .inner {
   font-size: 1.5rem;
 }
 
-#banner .social-links {
-  -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease,
-    -moz-filter 0.25s ease;
-  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease,
-    -webkit-filter 0.25s ease;
-  -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease,
-    -ms-filter 0.25s ease;
-  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
-  -moz-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-  -moz-transition-delay: 0.8s;
-  -webkit-transition-delay: 0.8s;
-  -ms-transition-delay: 0.8s;
-  transition-delay: 0.8s;
-  -moz-filter: blur(0);
-  -webkit-filter: blur(0);
-  -ms-filter: blur(0);
-  filter: blur(0);
-  opacity: 1;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  text-decoration: none;
-}
-
-#banner .social-links a {
-  border: none;
-}
-
-#banner .social-links i {
-  color: white;
-  font-size: 5em;
-}
-
 #banner .mission-statement {
   text-align: center;
   text-transform: initial;
@@ -3704,18 +3664,6 @@ body.is-preload #banner h2 {
 }
 
 body.is-preload #banner .subtitle {
-  opacity: 0;
-  -moz-transform: translateX(0.5em);
-  -webkit-transform: translateX(0.5em);
-  -ms-transform: translateX(0.5em);
-  transform: translateX(0.5em);
-  -moz-filter: blur(2px);
-  -webkit-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-}
-
-body.is-preload #banner .social-links {
   opacity: 0;
   -moz-transform: translateX(0.5em);
   -webkit-transform: translateX(0.5em);
@@ -4242,13 +4190,16 @@ body.is-preload #banner p {
   width: 9em;
 }
 
-#footer .inner .social-links div:hover {
-	text-align: center;
-	width: 9em;
-  }
-
 #footer .inner .social-links a {
   border: none;
+}
+
+#footer .inner .social-links a:hover i {
+  color: gray;
+}
+
+#footer .inner .social-links a:hover span {
+  color: lightblue;
 }
 
 #footer .inner .social-links a i {
