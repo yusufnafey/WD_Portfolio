@@ -3525,9 +3525,14 @@ body.is-menu-visible #menu .inner {
   filter: blur(0);
   opacity: 1;
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-  font-size: 2.25em;
+  font-size: 3.25em;
   margin-bottom: 0.8em;
   padding-bottom: 0.4em;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#banner h3 {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 #banner .subtitle {
@@ -4195,15 +4200,15 @@ body.is-preload #banner p {
 }
 
 #footer .inner .social-links a:hover i {
-  color: gray;
+  color: #BF8F00;
 }
 
 #footer .inner .social-links a:hover span {
-  color: lightblue;
+  color: #BF8F00;
 }
 
 #footer .inner .social-links a i {
-  color: white;
+  color: #777777;
   font-size: 3em;
 }
 
@@ -4214,11 +4219,12 @@ body.is-preload #banner p {
 #footer .inner .social-links .icon-label {
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: #ebb734;
+  color: #fff;
+  font-weight: 600;
   }
 
 #footer .inner .social-links .contact-info {
-	border-bottom: 1px #4c5c96 solid;
+	border-bottom: 1px #BF8F00 solid;
 }
 
 #footer .inner .copyright {
