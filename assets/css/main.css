@@ -3694,6 +3694,12 @@ body.is-preload #banner p {
 
 /* Wrapper */
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
 #wrapper > header {
   padding: 11em 0 2.25em 0;
 }
