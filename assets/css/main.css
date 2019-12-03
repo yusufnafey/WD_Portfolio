@@ -407,7 +407,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 h5 {
@@ -3218,6 +3218,8 @@ button:disabled,
   border: 0;
   display: inline-block;
   padding: 0 1em;
+  transition: all .3s;
+
 }
 
 #header nav a:before {
@@ -3256,7 +3258,6 @@ button:disabled,
 
 #header nav a:hover {
   background-color: black;
-  transition: all .5s;
 }
 
 #header.alt {
@@ -3694,10 +3695,43 @@ body.is-preload #banner p {
 
 /* Wrapper */
 
-.skills-container {
+.skills-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: left;
+}
+
+.skills-bottom {
+  text-align: left;
+  display: flex;
+  margin-top: 50px;
+}
+
+.skills-bottom .skills-statement {
+  width: 50%;
+}
+
+.skills-bottom .skills-images {
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills-bottom .skills-images .skills-img-container {
+  text-align: center;
+  width: 100%;
+}
+
+.skills-bottom .skills-images img {
+  transition: .5s;
+  width: 100px;
+}
+
+
+.skills-bottom .skills-images img:hover {
+  width: 150px;
 }
 
 #wrapper > header {
