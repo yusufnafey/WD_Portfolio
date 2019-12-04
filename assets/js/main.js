@@ -62,55 +62,55 @@ $(document).ready(function(){
 
 		}
 
-	// Menu.
-		var $menu = $('#menu');
+	// Project 1.
+		var $project1 = $('#project-1');
 
-		$menu._locked = false;
+		$project1._locked = false;
 
-		$menu._lock = function() {
+		$project1._lock = function() {
 
-			if ($menu._locked)
+			if ($project1._locked)
 				return false;
 
-			$menu._locked = true;
+			$project1._locked = true;
 
 			window.setTimeout(function() {
-				$menu._locked = false;
+				$project1._locked = false;
 			}, 350);
 
 			return true;
 
 		};
 
-		$menu._show = function() {
+		$project1._show = function() {
 
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
-
-		};
-
-		$menu._hide = function() {
-
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
+			if ($project1._lock())
+				$body.addClass('is-project-1-visible');
 
 		};
 
-		$menu._toggle = function() {
+		$project1._hide = function() {
 
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
+			if ($project1._lock())
+				$body.removeClass('is-project-1-visible');
 
 		};
 
-		$menu
+		$project1._toggle = function() {
+
+			if ($project1._lock())
+				$body.toggleClass('is-project-1-visible');
+
+		};
+
+		$project1
 			.appendTo($body)
 			.on('click', function(event) {
 
 				event.stopPropagation();
 
 				// Hide.
-					$menu._hide();
+					$project1._hide();
 
 			})
 			.find('.inner')
@@ -121,7 +121,7 @@ $(document).ready(function(){
 					event.stopImmediatePropagation();
 
 					// Hide.
-						$menu._hide();
+						$project1._hide();
 
 				})
 				.on('click', function(event) {
@@ -135,7 +135,7 @@ $(document).ready(function(){
 					event.stopPropagation();
 
 					// Hide.
-						$menu._hide();
+						$project1._hide();
 
 					// Redirect.
 						window.setTimeout(function() {
@@ -145,21 +145,223 @@ $(document).ready(function(){
 				});
 
 		$body
-			.on('click', 'a[href="#menu"]', function(event) {
+			.on('click', 'a[href="#project-1"]', function(event) {
 
 				event.stopPropagation();
 				event.preventDefault();
 
 				// Toggle.
-					$menu._toggle();
+					$project1._toggle();
 
 			})
 			.on('keydown', function(event) {
 
 				// Hide on escape.
 					if (event.keyCode == 27)
-						$menu._hide();
+						$project1._hide();
 
 			});
+	
+	// Project 2.
+		var $project2 = $('#project-2');
+
+		$project2._locked = false;
+
+		$project2._lock = function() {
+
+			if ($project2._locked)
+				return false;
+
+			$project2._locked = true;
+
+			window.setTimeout(function() {
+				$project2._locked = false;
+			}, 350);
+
+			return true;
+
+		};
+
+		$project2._show = function() {
+
+			if ($project2._lock())
+				$body.addClass('is-project-2-visible');
+
+		};
+
+		$project2._hide = function() {
+
+			if ($project2._lock())
+				$body.removeClass('is-project-2-visible');
+
+		};
+
+		$project2._toggle = function() {
+
+			if ($project2._lock())
+				$body.toggleClass('is-project-2-visible');
+
+		};
+
+		$project2
+			.appendTo($body)
+			.on('click', function(event) {
+
+				event.stopPropagation();
+
+				// Hide.
+					$project2._hide();
+
+			})
+			.find('.inner')
+				.on('click', '.close', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+					event.stopImmediatePropagation();
+
+					// Hide.
+						$project2._hide();
+
+				})
+				.on('click', function(event) {
+					event.stopPropagation();
+				})
+				.on('click', 'a', function(event) {
+
+					var href = $(this).attr('href');
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					// Hide.
+						$project2._hide();
+
+					// Redirect.
+						window.setTimeout(function() {
+							window.location.href = href;
+						}, 350);
+
+				});
+
+		$body
+			.on('click', 'a[href="#project-2"]', function(event) {
+
+				event.stopPropagation();
+				event.preventDefault();
+
+				// Toggle.
+					$project2._toggle();
+
+			})
+			.on('keydown', function(event) {
+
+				// Hide on escape.
+					if (event.keyCode == 27)
+						$project2._hide();
+
+			});
+
+	// Project 3.
+		var $project3 = $('#project-3');
+
+		$project3._locked = false;
+
+		$project3._lock = function() {
+
+			if ($project3._locked)
+				return false;
+
+			$project3._locked = true;
+
+			window.setTimeout(function() {
+				$project3._locked = false;
+			}, 350);
+
+			return true;
+
+		};
+
+		$project3._show = function() {
+
+			if ($project3._lock())
+				$body.addClass('is-project-3-visible');
+
+		};
+
+		$project3._hide = function() {
+
+			if ($project3._lock())
+				$body.removeClass('is-project-3-visible');
+
+		};
+
+		$project3._toggle = function() {
+
+			if ($project3._lock())
+				$body.toggleClass('is-project-3-visible');
+
+		};
+
+		$project3
+			.appendTo($body)
+			.on('click', function(event) {
+
+				event.stopPropagation();
+
+				// Hide.
+					$project3._hide();
+
+			})
+			.find('.inner')
+				.on('click', '.close', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+					event.stopImmediatePropagation();
+
+					// Hide.
+						$project3._hide();
+
+				})
+				.on('click', function(event) {
+					event.stopPropagation();
+				})
+				.on('click', 'a', function(event) {
+
+					var href = $(this).attr('href');
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					// Hide.
+						$project3._hide();
+
+					// Redirect.
+						window.setTimeout(function() {
+							window.location.href = href;
+						}, 350);
+
+				});
+
+		$body
+			.on('click', 'a[href="#project-3"]', function(event) {
+
+				event.stopPropagation();
+				event.preventDefault();
+
+				// Toggle.
+					$project3._toggle();
+
+			})
+			.on('keydown', function(event) {
+
+				// Hide on escape.
+					if (event.keyCode == 27)
+						$project3._hide();
+
+			});
+
+
 
 })(jQuery);

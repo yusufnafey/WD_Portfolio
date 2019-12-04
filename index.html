@@ -17,9 +17,11 @@
   <body class="is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
+      <div id="top"></div>
+
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">Yusuf Nafey</a></h1>
+        <h1><a href="#top">Yusuf Nafey</a></h1>
         <nav>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -27,21 +29,10 @@
         </nav>
       </header>
 
-      <!-- Menu -->
-      <!-- <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">resume</a></li>
-            <li><a href="elements.html">Elements</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-          <a href="#" class="close">Close</a>
-        </div>
-      </nav> -->
-
+      <div class="under-construction-container">
+        <h1 class="under-construction-title">🚧UNDER CONSTRUCTION🚧</h1>
+        <h4 class="under-construction-subtitle">(but feel free to browse, ignore the mess 😅)</h4>
+      </div>
       <!-- Banner -->
       <section id="banner">
         <div class="inner">
@@ -49,7 +40,7 @@
             <img src="images/yusuf.jpg" alt="avatar" class="icon" />
           </div>
           <h2>Yusuf Nafey</h2>
-          <h3 class="subtitle">Full Stack Software Developer</h3>
+          <h3 class="subtitle">Full Stack Developer</h3>
           <br />
           <br />
           <br />
@@ -60,12 +51,19 @@
             challenges and hope to venture even further down my chosen career
             path, learning as I go.
           </p> -->
-          <p class="mission-statement">
+          <!-- <p class="mission-statement">
             Living in the Bay Area, I've always felt a natural inclination
             towards the tech world, particularly the web. If I'm not coding, I'm
             probably reading a book at a coffee shop. I hope to take not only my
             skillset, but my passion, to a team of like-minded individuals in
             helping build a better, faster, more modern web.
+          </p> -->
+          <p class="mission-statement">
+            I have a passion for two things: technology and helping others.
+            Using my strong background in JavaScript tech such as React, Redux,
+            NodeJS, and Express, I enjoy helping others by building interactive
+            and engaging web experiences. I hope to one day work on a team of
+            like-minded individuals.
           </p>
         </div>
       </section>
@@ -76,13 +74,71 @@
         <section id="one" class="wrapper spotlight style1">
           <div id="skills"></div>
           <div class="inner">
-            <a href="#" class="image"><img src="images/pic01.jpg" alt=""/></a>
+            <!-- <a href="#" class="image"><img src="images/skills.jpeg" alt=""/></a> -->
             <div class="content">
               <h2 class="major">Skills</h2>
-              <p>
-                HTML/CSS | Bootstrap | JavaScript | React | React Native |
-                NodeJS | Express | MongoDB
-              </p>
+              <div class="skills-list">
+                <div>
+                  HTML <br />
+                  CSS <br />
+                  JavaScript <br />
+                  React <br />
+                  Redux
+                </div>
+                <div>
+                  Express <br />
+                  Node JS <br />
+                  Python <br />
+                  PostgreSQL <br />
+                  Django
+                </div>
+                <div>
+                  Git <br />
+                  jQuery <br />
+                  Bootstrap <br />
+                  Responsive Design <br />
+                  Single Page Applications
+                </div>
+              </div>
+              <div class="skills-bottom">
+                <div class="skills-statement">
+                  <h4>Motivated to produce results</h4>
+                  <p>
+                    As a tenacious full-stack developer, I use continuous
+                    iteration to produce results quickly and continuously
+                    improve products.
+                  </p>
+                  <h4>An agile collaborator</h4>
+                  <p>
+                    I have contributed to open source projects, worked on
+                    engineering teams, and always stay attuned to the newest
+                    frameworks.
+                  </p>
+                </div>
+                <div class="skills-images">
+                  <div class="skills-img-container">
+                    <img
+                      src="images/javascript.png"
+                      alt="javascript logo"
+                      class="skill-logos"
+                    />
+                  </div>
+                  <div class="skills-img-container">
+                    <img
+                      src="images/react.png"
+                      alt="react lo go"
+                      class="skill-logos"
+                    />
+                  </div>
+                  <div class="skills-img-container">
+                    <img
+                      src="images/node.png"
+                      alt="node logo"
+                      class="skill-logos"
+                    />
+                  </div>
+                </div>
+              </div>
               <!-- <a href="" class="special">Check out my resume</a> -->
             </div>
           </div>
@@ -119,75 +175,182 @@
           <div class="inner">
             <h2 class="major">Projects</h2>
             <!-- <p>Below are some of my projects</p> -->
-            <section class="features">
+            <section class="projects">
+              <!-- ========== PROJECT 1 ========== -->
+              <!-- CARD -->
               <article>
                 <a
                   href="https://knowledge-without-college.netlify.com/"
                   target="_blank"
                   class="image"
-                  ><img
+                >
+                  <img
                     src="images/knowledge_without_college.PNG"
-                    height="325px"
+                    height="275px"
                     alt=""
-                /></a>
+                  />
+                  <!-- <div class="kwc-image"></div> -->
+                </a>
                 <h3 class="major">Knowledge Without College</h3>
                 <p>
-                  Web app that allows users and employees to browse and post job
-                  listings. Built using React, Node JS, Express.
+                  Allows users and employees to browse and post job listings.
                 </p>
-                <ul>
-                  <li>Worked as one of four full stack web developers</li>
-                  <li>Took lead on UI/UX direction and implementation</li>
-                </ul>
-                <a
-                  href="https://github.com/Lambda-School-Labs/labs9-job-board"
-                  target="_blank"
-                  class="special"
-                  >GitHub</a
-                >
-                <a
-                  href="https://knowledge-without-college.netlify.com/"
-                  target="_blank"
-                  class="special"
-                  >Deployed Site</a
-                >
+                <p class="tech-stack">
+                  React<br />
+                  Node JS<br />
+                  PostgreSQL<br />
+                  Express<br />
+                  CSS | SCSS
+                </p>
+                <a href="#project-1" class="special">Demo</a>
               </article>
+
+              <!-- MODAL -->
+              <nav id="project-1">
+                <div class="inner">
+                  <h2>Knowledge Without College</h2>
+                  <div class="demo-modal">
+                    <div class="project-video">VIDEO GOES HERE</div>
+                    <div class="project-info">
+                      <ul>
+                        <li>Worked as one of four full stack web developers</li>
+                        <li>Took lead on UI/UX direction and implementation</li>
+                      </ul>
+                      <a
+                        href="https://github.com/Lambda-School-Labs/labs9-job-board"
+                        target="_blank"
+                        class="special"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://knowledge-without-college.netlify.com/"
+                        target="_blank"
+                        class="special"
+                        >Deployed Site</a
+                      >
+                    </div>
+                  </div>
+                  <a href="#" class="close">Close</a>
+                </div>
+              </nav>
+
+              <!-- ========== PROJECT 2 ========== -->
+              <!-- CARD -->
               <article>
                 <a
                   href="https://grantly-b5b58.firebaseapp.com/"
                   target="_blank"
                   class="image"
-                  ><img src="images/founder_grants.PNG" height="325px" alt=""
+                  ><img src="images/founder_grants.PNG" height="275px" alt=""
                 /></a>
                 <h3 class="major">Founder Grants</h3>
                 <p>
-                  Web app that provides a database of grants in one central
-                  repository. Built using React, Redux, Node JS, Express.
+                  Provides a database of grants in one central repository.
                 </p>
-                <ul>
-                  <li>
-                    Worked as one of five full stack web developers under
-                    stakeholder instruction
-                  </li>
-                  <li>
-                    Responsible for backend management and multiple components
-                    on the frontend
-                  </li>
-                  <li>Built to be scalable to allow for future growth</li>
-                </ul>
-                <a
-                  href="https://github.com/Lambda-School-Labs/startup-grant-database-fe/"
-                  target="_blank"
-                  class="special"
-                  >GitHub</a
-                >
-                <a
-                  href="https://grantly-b5b58.firebaseapp.com/"
-                  target="_blank"
-                  class="special"
-                  >Deployed Site</a
-                >
+                <p class="tech-stack">
+                  React<br />
+                  Redux<br />
+                  Node JS<br />
+                  Express
+                </p>
+                <a href="#project-2" class="special">Demo</a>
               </article>
+
+              <!-- MODAL -->
+              <nav id="project-2">
+                <div class="inner">
+                  <h2>Founder Grants</h2>
+                  <div class="demo-modal">
+                    <div class="project-video">VIDEO GOES HERE</div>
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          Worked as one of five full stack web developers
+                          alongside two UI/UX designers, all under stakeholder
+                          instruction
+                        </li>
+                        <li>
+                          Responsible for backend management and multiple
+                          components on the frontend
+                        </li>
+                        <li>Built to be scalable to allow for future growth</li>
+                      </ul>
+                      <a
+                        href="https://github.com/Lambda-School-Labs/startup-grant-database-fe/"
+                        target="_blank"
+                        class="special"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://grantly-b5b58.firebaseapp.com/"
+                        target="_blank"
+                        class="special"
+                        >Deployed Site</a
+                      >
+                    </div>
+                  </div>
+                  <a href="#" class="close">Close</a>
+                </div>
+              </nav>
+
+              <!-- ========== PROJECT 3 ========== -->
+              <!-- CARD -->
+              <article>
+                <a
+                  href="https://lambda-university.netlify.com/"
+                  target="_blank"
+                  class="image"
+                  ><img src="images/lambda_university.PNG" height="275px" alt=""
+                /></a>
+                <h3 class="major">Lambda University</h3>
+                <p>
+                  A virtual university maze game.
+                </p>
+                <p class="tech-stack">
+                  React<br />
+                  Python<br />
+                  Django<br />
+                  CSS | SCSS
+                </p>
+                <a href="#project-3" class="special">Demo</a>
+              </article>
+
+              <!-- MODAL -->
+              <nav id="project-3">
+                <div class="inner">
+                  <h2>Lambda University</h2>
+                  <div class="demo-modal">
+                    <div class="project-video">VIDEO GOES HERE</div>
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          Worked as one of five full stack web developers
+                          alongside two UI/UX designers, all under stakeholder
+                          instruction
+                        </li>
+                        <li>
+                          Responsible for backend management and multiple
+                          components on the frontend
+                        </li>
+                        <li>Built to be scalable to allow for future growth</li>
+                      </ul>
+                      <a
+                        href="https://github.com/Lambda-School-Labs/startup-grant-database-fe/"
+                        target="_blank"
+                        class="special"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://grantly-b5b58.firebaseapp.com/"
+                        target="_blank"
+                        class="special"
+                        >Deployed Site</a
+                      >
+                    </div>
+                  </div>
+                  <a href="#" class="close">Close</a>
+                </div>
+              </nav>
               <!-- <article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3 class="major">Ante fermentum</h3>
