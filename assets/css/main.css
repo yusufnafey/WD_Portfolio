@@ -471,6 +471,11 @@ pre code {
   overflow-x: auto;
 }
 
+.tech-stack {
+  text-align: center;
+  line-height: 2em;
+}
+
 hr {
   border: 0;
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
@@ -3093,7 +3098,7 @@ button:disabled,
   }
 }
 
-/* Features */
+/* projects */
 
 /* .kwc-image {
     width: 400;
@@ -3103,7 +3108,7 @@ button:disabled,
     background-repeat: no-repeat;
 } */
 
-.features {
+.projects {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -3115,7 +3120,11 @@ button:disabled,
   margin: 0 0 2em 0;
 }
 
-.features article {
+.projects p {
+  margin: 0;
+}
+
+.projects article {
   padding: 1.75em 1.75em 0.1em 1.75em;
   background-color: #353849;
   border-radius: 5px;
@@ -3123,11 +3132,11 @@ button:disabled,
   width: calc(50% - 1.5em);
 }
 
-.features article:nth-child(2n) {
+.projects article:nth-child(2n) {
   margin-right: 0;
 }
 
-.features article .image {
+.projects article .image {
   border-radius: 5px 5px 0 0;
   display: block;
   margin-bottom: 1.75em;
@@ -3137,26 +3146,26 @@ button:disabled,
   width: calc(100% + 3.5em);
 }
 
-.features article .image img {
+.projects article .image img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
 
 @media screen and (max-width: 980px) {
-  .features article {
+  .projects article {
     margin: 1em 2em 1em 0;
     width: calc(50% - 1em);
   }
 }
 
 @media screen and (max-width: 736px) {
-  .features article {
+  .projects article {
     padding: 1.5em 1.5em 0.1em 1.5em;
     margin: 0.875em 1.75em 0.875em 0;
     width: calc(50% - 0.875em - 1px);
   }
 
-  .features article .image {
+  .projects article .image {
     margin-bottom: 1.5em;
     margin-left: -1.5em;
     margin-top: -1.5em;
@@ -3165,11 +3174,11 @@ button:disabled,
 }
 
 @media screen and (max-width: 480px) {
-  .features {
+  .projects {
     display: block;
   }
 
-  .features article {
+  .projects article {
     width: 100%;
     margin: 0 0 2em 0 !important;
   }
@@ -3388,7 +3397,8 @@ button:disabled,
   max-width: 100%;
   opacity: 0;
   position: relative;
-  width: 18em;
+  width: 60em;
+  height: 70vh;
 }
 
 #project-1 h2 {
@@ -3397,18 +3407,23 @@ button:disabled,
 }
 
 
-#project-1 .demo-container {
+#project-1 .demo-modal {
   width: 100%;
+  height: 50vh;
   display: flex;
+  text-align: left;
 }
 
-#project-1 .demo-container .video {
-  width: 75%;
+#project-1 .demo-modal .project-video {
+  width: 70%;
   border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#project-1 .demo-container .project-info {
-  width: 25%;
+#project-1 .demo-modal .project-info {
+  width: 30%;
   border: 3px solid pink;
 }
 
