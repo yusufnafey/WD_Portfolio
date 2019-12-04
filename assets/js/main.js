@@ -262,6 +262,106 @@ $(document).ready(function(){
 
 			});
 
+	// Project 3.
+		var $project3 = $('#project-3');
+
+		$project3._locked = false;
+
+		$project3._lock = function() {
+
+			if ($project3._locked)
+				return false;
+
+			$project3._locked = true;
+
+			window.setTimeout(function() {
+				$project3._locked = false;
+			}, 350);
+
+			return true;
+
+		};
+
+		$project3._show = function() {
+
+			if ($project3._lock())
+				$body.addClass('is-project-3-visible');
+
+		};
+
+		$project3._hide = function() {
+
+			if ($project3._lock())
+				$body.removeClass('is-project-3-visible');
+
+		};
+
+		$project3._toggle = function() {
+
+			if ($project3._lock())
+				$body.toggleClass('is-project-3-visible');
+
+		};
+
+		$project3
+			.appendTo($body)
+			.on('click', function(event) {
+
+				event.stopPropagation();
+
+				// Hide.
+					$project3._hide();
+
+			})
+			.find('.inner')
+				.on('click', '.close', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+					event.stopImmediatePropagation();
+
+					// Hide.
+						$project3._hide();
+
+				})
+				.on('click', function(event) {
+					event.stopPropagation();
+				})
+				.on('click', 'a', function(event) {
+
+					var href = $(this).attr('href');
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					// Hide.
+						$project3._hide();
+
+					// Redirect.
+						window.setTimeout(function() {
+							window.location.href = href;
+						}, 350);
+
+				});
+
+		$body
+			.on('click', 'a[href="#project-3"]', function(event) {
+
+				event.stopPropagation();
+				event.preventDefault();
+
+				// Toggle.
+					$project3._toggle();
+
+			})
+			.on('keydown', function(event) {
+
+				// Hide on escape.
+					if (event.keyCode == 27)
+						$project3._hide();
+
+			});
+
 
 
 })(jQuery);
