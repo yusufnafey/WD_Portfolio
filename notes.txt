@@ -1,0 +1,1 @@
+- only project 1 has all CSS styling, rest only have a few of the main ones
