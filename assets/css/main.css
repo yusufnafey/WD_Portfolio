@@ -78,7 +78,7 @@ figcaption,
 footer,
 header,
 hgroup,
-menu,
+project-1,
 nav,
 output,
 ruby,
@@ -104,7 +104,7 @@ figure,
 footer,
 header,
 hgroup,
-menu,
+project-1,
 nav,
 section {
   display: block;
@@ -3095,6 +3095,14 @@ button:disabled,
 
 /* Features */
 
+/* .kwc-image {
+    width: 400;
+    height: 350px;
+    background-image: url("../../images/knowledge_without_college.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
 .features {
   display: -moz-flex;
   display: -webkit-flex;
@@ -3227,7 +3235,7 @@ button:disabled,
   margin-left: 0.75em;
 }
 
-#header nav a[href="#menu"] {
+#header nav a[href="#project-1"] {
   text-decoration: none;
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -3238,7 +3246,7 @@ button:disabled,
   padding: 0 1.35em;
 }
 
-#header nav a[href="#menu"]:before {
+#header nav a[href="#project-1"]:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -3251,7 +3259,7 @@ button:disabled,
   font-weight: 900;
 }
 
-#header nav a[href="#menu"]:before {
+#header nav a[href="#project-1"]:before {
   content: "\f0c9";
   line-height: inherit;
 }
@@ -3287,27 +3295,27 @@ button:disabled,
     line-height: inherit;
   }
 
-  #header nav a[href="#menu"] {
+  #header nav a[href="#project-1"] {
     box-shadow: none;
     padding: 0 1em;
     border-radius: 0;
   }
 
-  #header nav a[href="#menu"]:hover,
-  #header nav a[href="#menu"]:active {
+  #header nav a[href="#project-1"]:hover,
+  #header nav a[href="#project-1"]:active {
     background-color: inherit;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #header nav a[href="#menu"] {
+  #header nav a[href="#project-1"] {
     width: 4em;
     white-space: nowrap;
     text-indent: 4em;
     position: relative;
   }
 
-  #header nav a[href="#menu"]:before {
+  #header nav a[href="#project-1"]:before {
     width: inherit;
     position: absolute;
     top: 0;
@@ -3319,7 +3327,7 @@ button:disabled,
   }
 }
 
-/* Menu */
+/* project-1 */
 
 #page-wrapper {
   -moz-transition: -moz-filter 0.25s ease;
@@ -3328,7 +3336,7 @@ button:disabled,
   transition: filter 0.25s ease;
 }
 
-#menu {
+#project-1 {
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -3363,7 +3371,7 @@ button:disabled,
   width: 100%;
 }
 
-#menu .inner {
+#project-1 .inner {
   padding: 2.5em 1.5em 0.5em 1.5em;
   -moz-transform: translateY(0.5em);
   -webkit-transform: translateY(0.5em);
@@ -3383,12 +3391,28 @@ button:disabled,
   width: 18em;
 }
 
-#menu h2 {
+#project-1 h2 {
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
   padding-bottom: 1em;
 }
 
-#menu .close {
+
+#project-1 .demo-container {
+  width: 100%;
+  display: flex;
+}
+
+#project-1 .demo-container .video {
+  width: 75%;
+  border: 3px solid red;
+}
+
+#project-1 .demo-container .project-info {
+  width: 25%;
+  border: 3px solid pink;
+}
+
+#project-1 .close {
   background-image: url("images/close.svg");
   background-position: 75% 25%;
   background-repeat: no-repeat;
@@ -3406,59 +3430,32 @@ button:disabled,
   width: 4em;
 }
 
-#menu .links {
-  list-style: none;
-  margin-bottom: 1.5em;
-  padding: 0;
-}
-
-#menu .links li {
-  padding: 0;
-}
-
-#menu .links li a {
-  border-radius: 5px;
-  border: 0;
-  display: block;
-  font-family: Raleway, Helvetica, sans-serif;
-  font-size: 0.8em;
-  font-weight: 200;
-  letter-spacing: 0.1em;
-  line-height: 1.85em;
-  padding: 0.75em 0;
-  text-transform: uppercase;
-}
-
-#menu .links li a:hover {
-  background: #45558d;
-}
-
 @media screen and (max-width: 736px) {
-  #menu .inner {
+  #project-1 .inner {
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
   }
 
-  #menu .inner .close {
+  #project-1 .inner .close {
     background-size: 1.5em 1.5em;
   }
 }
 
-body.is-menu-visible #page-wrapper {
+body.is-project-1-visible #page-wrapper {
   -moz-filter: blur(1.5px);
   -webkit-filter: blur(1.5px);
   -ms-filter: blur(1.5px);
   filter: blur(1.5px);
 }
 
-body.is-menu-visible #menu {
+body.is-project-1-visible #project-1 {
   pointer-events: auto;
   opacity: 1;
   visibility: visible;
 }
 
-body.is-menu-visible #menu .inner {
+body.is-project-1-visible #project-1 .inner {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);

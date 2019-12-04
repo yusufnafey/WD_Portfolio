@@ -63,7 +63,7 @@ $(document).ready(function(){
 		}
 
 	// Menu.
-		var $menu = $('#menu');
+		var $menu = $('#project-1');
 
 		$menu._locked = false;
 
@@ -85,21 +85,21 @@ $(document).ready(function(){
 		$menu._show = function() {
 
 			if ($menu._lock())
-				$body.addClass('is-menu-visible');
+				$body.addClass('is-project-1-visible');
 
 		};
 
 		$menu._hide = function() {
 
 			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
+				$body.removeClass('is-project-1-visible');
 
 		};
 
 		$menu._toggle = function() {
 
 			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
+				$body.toggleClass('is-project-1-visible');
 
 		};
 
@@ -145,7 +145,7 @@ $(document).ready(function(){
 				});
 
 		$body
-			.on('click', 'a[href="#menu"]', function(event) {
+			.on('click', 'a[href="#project-1"]', function(event) {
 
 				event.stopPropagation();
 				event.preventDefault();
