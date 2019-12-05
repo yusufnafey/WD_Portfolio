@@ -188,13 +188,7 @@ html {
 }
 
 body {
-  background-color: #2e3141;
-  background-image: linear-gradient(
-      to top,
-      rgba(46, 49, 65, 0.8),
-      rgba(46, 49, 65, 0.8)
-    ),
-    url("../../images/bg.jpg");
+  background-color: #4C5C96;
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -2434,7 +2428,7 @@ input[type="radio"]:checked + label:before {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #4c5c96;
+  border-color: green;
 }
 
 input[type="checkbox"] + label:before {
@@ -2857,7 +2851,7 @@ ul.pagination li > .page:hover {
 }
 
 ul.pagination li > .page.active {
-  background-color: #4c5c96;
+  background-color: green;
 }
 
 ul.pagination li:first-child {
@@ -3023,7 +3017,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-  background-color: #4c5c96;
+  background-color: green;
   box-shadow: none;
 }
 
@@ -3391,7 +3385,7 @@ button:disabled,
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: green;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -3526,7 +3520,7 @@ body.is-project-1-visible #project-1 .inner {
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: green;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -3661,7 +3655,7 @@ body.is-project-2-visible #project-2 .inner {
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: green;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -4109,22 +4103,22 @@ body.is-preload #banner p {
 }
 
 .wrapper {
-  background-color: #2e3141;
+  background-color: #3F4E85;
   margin: 6.5em 0;
   position: relative;
 }
 
 .wrapper:before,
 .wrapper:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233F4E85%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper:before {
-  box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+  box-shadow: inset 0 -1px 0 0 #3F4E85, 0 1px 0 0 #3F4E85;
 }
 
 .wrapper:after {
-  box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+  box-shadow: inset 0 -1px 0 0 #3F4E85, 0 1px 0 0 #3F4E85;
 }
 
 .wrapper:before,
@@ -4140,6 +4134,7 @@ body.is-preload #banner p {
 
 .wrapper:before {
   left: 0;
+  background-color: #4C5C96;
   top: -6.5em;
 }
 
@@ -4157,6 +4152,7 @@ body.is-preload #banner p {
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  background-color: #45558D;
 }
 
 .wrapper.alt:after {
@@ -4258,20 +4254,20 @@ body.is-preload #banner p {
 }
 
 .wrapper.spotlight {
-  background-color: #4c5c96;
+  background-color: #45558D;
 }
 
 .wrapper.spotlight:before,
 .wrapper.spotlight:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558D%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight:before {
-  box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+  box-shadow: inset 0 -1px 0 0 #45558D, 0 1px 0 0 #45558D;
 }
 
 .wrapper.spotlight:after {
-  box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+  box-shadow: inset 0 -1px 0 0 #45558D, 0 1px 0 0 #45558D;
 }
 
 .wrapper.spotlight .inner {
