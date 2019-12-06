@@ -4544,35 +4544,37 @@ body.is-preload #banner p {
   border: none;
 }
 
-#footer .inner .social-links a:hover i {
-  /* color: #3F4E85; */
-  color: #BF8F00;
-}
-
-#footer .inner .social-links a:hover span {
-  color: #BF8F00;
-}
-
 #footer .inner .social-links a i {
-  color: #777777;
   font-size: 3em;
 }
 
-#footer .inner .social-links a p {
-	margin: 1em 0 0 0;
+#footer .inner .social-links a:hover i {
+  font-size: 3.2em;
+  transition: .3s;
+  color: white;
 }
 
 #footer .inner .social-links .icon-label {
-	letter-spacing: 3px;
-	text-transform: uppercase;
-  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 1em 0 0 0;
   font-weight: 600;
-  }
+}
+
+#footer .inner .social-links a:hover .icon-label {
+  letter-spacing: 3px;
+  color: white;
+}
 
 #footer .inner .social-links .contact-info {
   border-bottom: 1px #3F4E85 solid;
-	/* border-bottom: 1px #BF8F00 solid; */
 }
+
+#footer .inner .social-links a:hover .contact-info {
+  color: orange;
+}
+
+
 
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
