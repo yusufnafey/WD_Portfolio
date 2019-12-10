@@ -3387,7 +3387,7 @@ button:disabled,
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: green;
+  background: #3F4E85;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -3417,6 +3417,9 @@ button:disabled,
 
 #project-1 .demo-modal .project-info {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-1 .close {
@@ -3551,7 +3554,9 @@ body.is-project-1-visible #project-1 .inner {
 
 #project-2 .demo-modal .project-info {
   width: 30%;
-  border: 3px solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-2 .close {
@@ -3686,7 +3691,9 @@ body.is-project-2-visible #project-2 .inner {
 
 #project-3 .demo-modal .project-info {
   width: 30%;
-  border: 3px solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-3 .close {
@@ -3993,6 +4000,10 @@ body.is-preload #banner p {
 }
 
 /* Wrapper */
+
+.spacer {
+  margin-top: 25px;
+}
 
 .skills-list {
   display: flex;
