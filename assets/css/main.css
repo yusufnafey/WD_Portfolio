@@ -3407,20 +3407,16 @@ button:disabled,
   width: 100%;
   height: 50vh;
   display: flex;
+  justify-content: space-between;
   text-align: left;
 }
 
 #project-1 .demo-modal .project-video {
   width: 70%;
-  border: 3px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #project-1 .demo-modal .project-info {
-  width: 30%;
-  border: 3px solid pink;
+  width: 25%;
 }
 
 #project-1 .close {
