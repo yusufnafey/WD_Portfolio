@@ -188,13 +188,7 @@ html {
 }
 
 body {
-  background-color: #2e3141;
-  background-image: linear-gradient(
-      to top,
-      rgba(46, 49, 65, 0.8),
-      rgba(46, 49, 65, 0.8)
-    ),
-    url("../../images/bg.jpg");
+  background-color: #4C5C96;
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -310,6 +304,18 @@ a.special:not(.button):before {
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+
+.demo {
+  text-decoration: none;
+  border-bottom: 0;
+  display: block;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase;
 }
 
 a.special:not(.button):before {
@@ -2434,7 +2440,7 @@ input[type="radio"]:checked + label:before {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #4c5c96;
+  border-color: green;
 }
 
 input[type="checkbox"] + label:before {
@@ -2641,6 +2647,7 @@ ul.actions {
   list-style: none;
   margin-left: -1em;
   padding-left: 0;
+  margin: 2em 0 0 0;
 }
 
 ul.actions li {
@@ -2857,7 +2864,7 @@ ul.pagination li > .page:hover {
 }
 
 ul.pagination li > .page.active {
-  background-color: #4c5c96;
+  background-color: green;
 }
 
 ul.pagination li:first-child {
@@ -3023,7 +3030,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-  background-color: #4c5c96;
+  background-color: green;
   box-shadow: none;
 }
 
@@ -3126,7 +3133,8 @@ button:disabled,
 
 .projects article {
   padding: 1.75em 1.75em 0.1em 1.75em;
-  background-color: #353849;
+  background-color: #5866b4; 
+  /* hi */
   border-radius: 5px;
   margin: 1.5em 3em 1.5em 0;
   width: calc(50% - 1.5em);
@@ -3191,7 +3199,8 @@ button:disabled,
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: rgba(53, 56, 73, 0.95);
+  background-color: rgba(88, 102, 180, .85);
+  /* hi */
   height: 3.5em;
   left: 0;
   line-height: 3.5em;
@@ -3274,7 +3283,7 @@ button:disabled,
 }
 
 #header nav a:hover {
-  background-color: black;
+  background-color: #3F4E85;
 }
 
 #header.alt {
@@ -3391,7 +3400,7 @@ button:disabled,
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: #3F4E85;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -3411,20 +3420,19 @@ button:disabled,
   width: 100%;
   height: 50vh;
   display: flex;
+  justify-content: space-between;
   text-align: left;
 }
 
 #project-1 .demo-modal .project-video {
   width: 70%;
-  border: 3px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #project-1 .demo-modal .project-info {
-  width: 30%;
-  border: 3px solid pink;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-1 .close {
@@ -3526,14 +3534,14 @@ body.is-project-1-visible #project-1 .inner {
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: #3F4E85;
   border-radius: 5px;
   display: block;
   max-width: 100%;
   opacity: 0;
   position: relative;
   width: 60em;
-  height: 70vh;
+  height: 75vh;
 }
 
 #project-2 h2 {
@@ -3544,22 +3552,21 @@ body.is-project-1-visible #project-1 .inner {
 
 #project-2 .demo-modal {
   width: 100%;
-  height: 50vh;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: left;
 }
 
 #project-2 .demo-modal .project-video {
   width: 70%;
-  border: 3px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #project-2 .demo-modal .project-info {
-  width: 30%;
-  border: 3px solid pink;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-2 .close {
@@ -3661,7 +3668,7 @@ body.is-project-2-visible #project-2 .inner {
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: green;
   border-radius: 5px;
   display: block;
   max-width: 100%;
@@ -3694,7 +3701,9 @@ body.is-project-2-visible #project-2 .inner {
 
 #project-3 .demo-modal .project-info {
   width: 30%;
-  border: 3px solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #project-3 .close {
@@ -3760,7 +3769,10 @@ body.is-project-3-visible #project-3 .inner {
   background-color: yellow;
   position: relative;
   top: 75px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .under-construction-title {
@@ -3999,6 +4011,10 @@ body.is-preload #banner p {
 
 /* Wrapper */
 
+.spacer {
+  margin-top: 25px;
+}
+
 .skills-list {
   display: flex;
   justify-content: space-around;
@@ -4109,22 +4125,22 @@ body.is-preload #banner p {
 }
 
 .wrapper {
-  background-color: #2e3141;
+  background-color: #3F4E85;
   margin: 6.5em 0;
   position: relative;
 }
 
 .wrapper:before,
 .wrapper:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233F4E85%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper:before {
-  box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+  box-shadow: inset 0 -1px 0 0 #3F4E85, 0 1px 0 0 #3F4E85;
 }
 
 .wrapper:after {
-  box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+  box-shadow: inset 0 -1px 0 0 #3F4E85, 0 1px 0 0 #3F4E85;
 }
 
 .wrapper:before,
@@ -4140,6 +4156,7 @@ body.is-preload #banner p {
 
 .wrapper:before {
   left: 0;
+  background-color: #4C5C96;
   top: -6.5em;
 }
 
@@ -4157,6 +4174,7 @@ body.is-preload #banner p {
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  background-color: #45558D;
 }
 
 .wrapper.alt:after {
@@ -4258,20 +4276,20 @@ body.is-preload #banner p {
 }
 
 .wrapper.spotlight {
-  background-color: #4c5c96;
+  background-color: #45558D;
 }
 
 .wrapper.spotlight:before,
 .wrapper.spotlight:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558D%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight:before {
-  box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+  box-shadow: inset 0 -1px 0 0 #45558D, 0 1px 0 0 #45558D;
 }
 
 .wrapper.spotlight:after {
-  box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+  box-shadow: inset 0 -1px 0 0 #45558D, 0 1px 0 0 #45558D;
 }
 
 .wrapper.spotlight .inner {
@@ -4543,33 +4561,37 @@ body.is-preload #banner p {
   border: none;
 }
 
-#footer .inner .social-links a:hover i {
-  color: #BF8F00;
-}
-
-#footer .inner .social-links a:hover span {
-  color: #BF8F00;
-}
-
 #footer .inner .social-links a i {
-  color: #777777;
   font-size: 3em;
 }
 
-#footer .inner .social-links a p {
-	margin: 1em 0 0 0;
+#footer .inner .social-links a:hover i {
+  font-size: 3.1em;
+  transition: .3s;
+  color: white;
 }
 
 #footer .inner .social-links .icon-label {
-	letter-spacing: 3px;
-	text-transform: uppercase;
-  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 1em 0 0 0;
   font-weight: 600;
-  }
+}
+
+#footer .inner .social-links a:hover .icon-label {
+  letter-spacing: 3px;
+  color: white;
+}
 
 #footer .inner .social-links .contact-info {
-	border-bottom: 1px #BF8F00 solid;
+  border-bottom: 1px #3F4E85 solid;
 }
+
+#footer .inner .social-links a:hover .contact-info {
+  color: orange;
+}
+
+
 
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
