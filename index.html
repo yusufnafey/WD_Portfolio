@@ -48,10 +48,9 @@
           <br />
           <p class="mission-statement">
             I have a passion for two things: technology and helping others.
-            Using my strong background in JavaScript tech such as React, Redux,
-            NodeJS, and Express, I enjoy helping others by building interactive
-            and engaging web experiences. I hope to one day work on a team of
-            like-minded individuals.
+            Using my strong background in JavaScript, React, Redux, and NodeJS,
+            I enjoy helping others by building interactive and engaging web
+            experiences. I thrive working on teams of like-minded individuals.
           </p>
         </div>
       </section>
@@ -64,6 +63,29 @@
           <div class="inner">
             <div class="content">
               <h2 class="major spacer">Skills</h2>
+              <div class="skills-images">
+                <div class="skills-img-container">
+                  <img
+                    src="images/javascript.png"
+                    alt="javascript logo"
+                    class="skill-logos"
+                  />
+                </div>
+                <div class="skills-img-container">
+                  <img
+                    src="images/react.png"
+                    alt="react lo go"
+                    class="skill-logos"
+                  />
+                </div>
+                <div class="skills-img-container">
+                  <img
+                    src="images/node.png"
+                    alt="node logo"
+                    class="skill-logos"
+                  />
+                </div>
+              </div>
               <div class="skills-list">
                 <div>
                   HTML <br />
@@ -88,44 +110,23 @@
                 </div>
               </div>
               <div class="skills-bottom">
-                <div class="skills-statement">
+                <div class="statement-1">
                   <h4>Motivated to produce results</h4>
                   <p>
-                    As a tenacious full-stack developer, I use continuous
-                    iteration to produce results quickly and continuously
-                    improve products.
+                    As a tenacious developer, I use continuous iteration to
+                    produce results quickly and continuously improve products.
                   </p>
+                </div>
+                <div class="statement-2">
                   <h4>An agile collaborator</h4>
                   <p>
                     <!-- I have contributed to open source projects, worked on
-                    engineering teams, and always stay attuned to the newest
-                    frameworks. -->
-                    I have worked on engineering teams and always stay attuned
-                    to the newest frameworks.
+                      engineering teams, and always stay attuned to the newest
+                      frameworks. -->
+                    I thrive working on engineering teams of like-minded
+                    individuals and always stay attuned to the newest
+                    frameworks.
                   </p>
-                </div>
-                <div class="skills-images">
-                  <div class="skills-img-container">
-                    <img
-                      src="images/javascript.png"
-                      alt="javascript logo"
-                      class="skill-logos"
-                    />
-                  </div>
-                  <div class="skills-img-container">
-                    <img
-                      src="images/react.png"
-                      alt="react lo go"
-                      class="skill-logos"
-                    />
-                  </div>
-                  <div class="skills-img-container">
-                    <img
-                      src="images/node.png"
-                      alt="node logo"
-                      class="skill-logos"
-                    />
-                  </div>
                 </div>
               </div>
               <!-- Resume -->
@@ -145,29 +146,39 @@
               <!-- ========== PROJECT 1 ========== -->
               <!-- CARD -->
               <article>
-                <a
-                  href="https://knowledge-without-college.netlify.com/"
-                  target="_blank"
-                  class="image"
-                >
-                  <img
-                    src="images/knowledge_without_college.PNG"
-                    height="275px"
-                    alt=""
-                  />
-                </a>
-                <h3 class="major">Knowledge Without College</h3>
-                <p>
-                  Allows users and employees to browse and post job listings.
-                </p>
-                <p class="tech-stack">
-                  React<br />
-                  Node JS<br />
-                  PostgreSQL<br />
-                  Express<br />
-                  CSS | SCSS
-                </p>
-                <a href="#project-1" class="special">see demo</a>
+                <div class="article-top">
+                  <a
+                    href="https://knowledge-without-college.netlify.com/"
+                    target="_blank"
+                    class="image"
+                  >
+                    <img
+                      src="images/knowledge_without_college.PNG"
+                      height="275px"
+                      alt=""
+                    />
+                  </a>
+                  <h3 class="major">Knowledge Without College</h3>
+                  <p>
+                    Allows users and employees to browse and post job listings.
+                  </p>
+                  <ul>
+                    <li>
+                      Worked on a team of four full stack developers under a 6
+                      week deadline
+                    </li>
+                    <li>
+                      Took lead on the UI/UX direction and implementation
+                    </li>
+                    <li>
+                      Responsible for much of design and implementation across
+                      frontend components
+                    </li>
+                  </ul>
+                </div>
+                <div class="article-bottom">
+                  <a href="#project-1" class="special">Demo & Tech Stack</a>
+                </div>
               </article>
 
               <!-- MODAL -->
@@ -181,27 +192,27 @@
                       alt="KWC demo gif"
                     />
                     <div class="project-info">
-                      <div>
+                      <div class="tech-stack">
+                        <p>Tech Stack:</p>
                         <ul>
-                          <li>
-                            Worked as one of four full stack web developers
-                          </li>
-                          <li>
-                            Took lead on UI/UX direction and implementation
-                          </li>
+                          <li>React</li>
+                          <li>Node JS</li>
+                          <li>PostgreSQL</li>
+                          <li>Express</li>
+                          <li>CSS | SCSS</li>
                         </ul>
                       </div>
                       <div>
                         <a
                           href="https://github.com/Lambda-School-Labs/labs9-job-board"
                           target="_blank"
-                          class="special"
+                          class="special modal-special"
                           >GitHub</a
                         >
                         <a
                           href="https://knowledge-without-college.netlify.com/"
                           target="_blank"
-                          class="special"
+                          class="special modal-special"
                           >Deployed Site</a
                         >
                       </div>
@@ -218,20 +229,30 @@
                   href="https://grantly-b5b58.firebaseapp.com/"
                   target="_blank"
                   class="image"
-                  ><img src="images/founder_grants.PNG" height="275px" alt=""
+                  ><img src="images/founder_grants1.PNG" height="275px" alt=""
                 /></a>
                 <h3 class="major">Founder Grants</h3>
                 <p>
                   Provides a database of grants all in one central repository.
                 </p>
-                <p class="tech-stack">
-                  React<br />
-                  Redux<br />
-                  Node JS<br />
-                  Express<br />
-                  Material UI
-                </p>
-                <a href="#project-2" class="special">see demo</a>
+                <ul>
+                  <li>
+                    Worked alongside 4 full stack developers and 2 UX/UI
+                    designers
+                  </li>
+                  <li>
+                    Performed under stakeholder instruction with a deadline of 8
+                    weeks
+                  </li>
+                  <li>
+                    Responsible for backend management and multiple components
+                    across the frontend
+                  </li>
+                  <li>
+                    Built to be scalable to allow for future growth
+                  </li>
+                </ul>
+                <a href="#project-2" class="special">Demo & Tech Stack</a>
               </article>
 
               <!-- MODAL -->
@@ -245,20 +266,14 @@
                       alt="KWC demo gif"
                     />
                     <div class="project-info">
-                      <div>
+                      <div class="tech-stack">
+                        <p>Tech Stack:</p>
                         <ul>
-                          <li>
-                            Worked as one of five full stack web developers
-                            alongside two UI/UX designers, all under stakeholder
-                            instruction
-                          </li>
-                          <li>
-                            Responsible for backend management and multiple
-                            components on the frontend
-                          </li>
-                          <li>
-                            Built to be scalable to allow for future growth
-                          </li>
+                          <li>React</li>
+                          <li>Redux</li>
+                          <li>Node JS</li>
+                          <li>Express</li>
+                          <li>Material UI</li>
                         </ul>
                       </div>
                       <div>
