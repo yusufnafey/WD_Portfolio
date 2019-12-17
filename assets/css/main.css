@@ -3909,7 +3909,7 @@ body.is-project-3-visible #project-3 .inner {
 #banner .mission-statement {
   text-align: center;
   text-transform: initial;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 #banner p {
@@ -4076,15 +4076,19 @@ body.is-preload #banner p {
 .skills-bottom {
   text-align: left;
   display: flex;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
+.skills-bottom h4 {
+}
+
 .skills-bottom .statement-1 {
-  width: 50%;
+  width: 46%;
 }
 
 .skills-bottom .statement-2 {
-  width: 50%;
+  width: 46%;
 }
 
 #wrapper > header {
